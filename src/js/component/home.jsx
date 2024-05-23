@@ -16,8 +16,8 @@ const Home = ({ counter }) => {
             <div className="col bg-gradient mx-1">
               <i className="far fa-clock"></i>
             </div>
-            {countArray.map((element) =>{
-				return(<div className="col bg-gradient mx-1">{element}</div>)
+            {countArray.map((element, index) =>{
+				return(<div className="col bg-gradient mx-1" key={element + index}>{element}</div>)
 			})}
           </div>
         </div>
